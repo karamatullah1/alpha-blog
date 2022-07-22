@@ -1,7 +1,7 @@
 <div class="container">
   <% @articles.each do |article| %>
-       <div class="row justify-content-md-center">
-           <div class="col-8 mt-5 ">
+      <div class="row justify-content-md-center">
+          <div class="col-8 mt-5 ">
               <div class="card text-center shadow mb-5 bg-white rounded">
                   <div class="card-header font-italic">
                   <% if article.user %> 
@@ -25,7 +25,7 @@
                     Edited <%= time_ago_in_words(article.updated_at) %> ago </small>
                   </div>
               </div>
-           </div>   
-       </div>   
+          </div>   
+      </div>   
   <% end %>
 </div>    
